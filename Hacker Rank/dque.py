@@ -12,5 +12,4 @@ for i in range(int(input())):
         d.popleft()
     else:
         d.pop()
-
 print(d)

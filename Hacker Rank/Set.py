@@ -3,9 +3,7 @@ def average(array):
     # a= map(int, input())
     # a_set=set(a)
     sum=0
-    print(array,end="\n")
-    a_set=set(array)
-    print(a_set,end="\n")
+    a_set=set(array) 
     for x in range(0,len(a_set)):
         sum = sum + list(a_set)[x]
     avg=sum/len(a_set)

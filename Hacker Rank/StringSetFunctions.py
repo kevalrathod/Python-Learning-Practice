@@ -21,3 +21,4 @@ for i in range(int(input())):
 print(sum(n2))
 
         
+-

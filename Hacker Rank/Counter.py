@@ -5,11 +5,9 @@ def Count_Total(n,l,c):
 	for i in range(0,c):
 		size,price=map(int,input().split())
 		if numer_list[size]:
-			print(numer_list[size])
-			numer_list[size]=numer_list[size]-1
-			# income=income+price
-			# numer_list[size]-=1
-	# print(income)
+			income=income+price
+			numer_list[size]-=1
+	print(income)
 
 if __name__ == '__main__':
     n_shoe=int(input())
