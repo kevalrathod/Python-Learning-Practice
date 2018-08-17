@@ -42,3 +42,14 @@ print(mng.Full_Name())
 print(mng.email)
 mng.Add_emp(emp2)
 mng.print_employee()
+
+#isinstance is return True or False if object is instance of your object or not.
+
+print(isinstance(mng,Manager)) # Return True
+print(isinstance(mng,Employee)) # Return True
+print(isinstance(mng,Developer)) #Return False
+
+#issubclass is return true or false if the subclass is found or not.
+#First is Class and second arg is for subclass
+print(issubclass(Developer,Employee)) #True
+print(issubclass(Employee,Developer)) #Fasle
