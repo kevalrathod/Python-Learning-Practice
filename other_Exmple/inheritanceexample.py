@@ -1,4 +1,5 @@
 class Employee:
+	amount=2.5
 	def __init__(self,fname,lname,pay):
 		self.fname=fname
 		self.lname=lname
@@ -6,6 +7,15 @@ class Employee:
 		self.pay=pay
 	def Full_Name(self):
 		return '{} {}'.format(self.fname,self.lname)
+	def apply_rasie(self):
+		self.pay= int(self.pay*self.amount)
+		print("New pay of "+self.fname+'-->',self.pay)
+	def __repr__(self):
+		return "Employee('{}','{}','{}')".format(self.fname,self.lname,self.pay)
+	def __str__(self):
+		return '{}-->{}'.format(self.Full_Name(),self.email)
+	def __add__(self,other):
+		return self.pay+other.pay
 class Developer(Employee):
 	 def __init__(self,fname,lname,pay,lang):
 	 	super().__init__(fname,lname,pay)
@@ -37,6 +47,8 @@ print(emp1.Full_Name())
 print(dev1.email)
 print(dev1.lang)
 
+
+
 mng=Manager('Joe','Moskow',30000,[dev1])
 print(mng.Full_Name())
 print(mng.email)
@@ -53,3 +65,11 @@ print(isinstance(mng,Developer)) #Return False
 #First is Class and second arg is for subclass
 print(issubclass(Developer,Employee)) #True
 print(issubclass(Employee,Developer)) #Fasle
+
+
+
+emp1.apply_rasie()
+print(str(emp1))
+print(repr(emp1))
+
+print(emp1+emp2)
