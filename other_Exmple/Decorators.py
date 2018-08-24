@@ -5,5 +5,5 @@ def Outer():
 		print(msg)
 	return inner
 
-myFunc=inner()
+myFunc=Outer()
 myFunc()

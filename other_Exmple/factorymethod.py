@@ -27,10 +27,10 @@ class FactoryMethod:
 		 return '{} {}'.format(self.fname,self.lname)
 	def amount_raise(self):
 		self.pay = int(self.pay*self.rais_amount)
-	@classmethod
+	@classmethod #classmethod  take cls and return class method.
 	def rais_amt(cls,amt):
 		cls.rais_amount=amt
-	@staticmethod
+	@staticmethod #static method is genral function
 	def is_weekday(day):
 		if day.weekday()==5 or day.weekday()==6:
 			return False
