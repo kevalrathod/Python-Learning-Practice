@@ -36,14 +36,17 @@ def tripletCount(l1,l2,l3):
 	min=math.inf
 	l5=l1+l2+l3
 	print(sorted(l5))
-	data=[1,2,3,4,5,6,12,13,45,32,17]
-	for k, g in groupby(enumerate(data) ,lambda (i,x):i-x):
-		print(map(itemgetter(1), g))
+	start_index=0
+	end_index=0
+	# for k, g in groupby(enumerate(data) ,lambda (i,x):i-x):
+	# 	print(map(itemgetter(1), g))
 	# for i in range(0,len(l5)):
 	# 	if l5[i+1]-l5[i]==1:
 	# 		l6.append(l5[i])
 	# print(l6)
 	# print("numbers: ",l5[m],l5[n],l5[p])
+	for i in range(0,len(l5)):
+		if l5[i+1]-l5[i]
 l1=list(map(int,input().split()))
 l2=list(map(int,input().split()))
 l3=list(map(int,input().split()))

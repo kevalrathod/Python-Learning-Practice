@@ -4,7 +4,7 @@
 # The first line of input contains an integer T denoting the number of test cases. Each test case contains space separated integers n, A and B which denotes the number of elements in the array a[] and the range [A, B]. Next line contains space separated n elements in the array a[].
 
 # Output:
-# Print "Yes" if all the elements in the range are present else print "No"
+# Print "Yes" if all the elements in the range are present else print "No"+
 
 
 
