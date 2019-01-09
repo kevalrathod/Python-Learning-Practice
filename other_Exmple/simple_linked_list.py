@@ -43,15 +43,16 @@ class LinkedList:
             return
 
         new_node=Node(new_data)
-        curr=self.head
-        print("curr data is:",curr.data)
+        # curr=self.head
+        # print("curr data is:",curr.data)
         
-        while curr!=prev_data:
-            print(curr.data,"and",prev_data)
-            curr=curr.next
+        # while curr.next!=prev_data:
+        #     curr=curr.next
+        #     print(curr.data)
+        #     # print(curr.data,"and",prev_data)
 
-        new_node.next=curr.next
-        curr.next=new_node
+        new_node.next=prev_data.next
+        prev_data.next=new_node
 
 
     def reverse(self):
@@ -108,6 +109,7 @@ if __name__=='__main__':
 
     llist = LinkedList() 
 
+    
     llist.head = Node(1) 
     second = Node(2) 
     third = Node(3) 
@@ -125,16 +127,16 @@ if __name__=='__main__':
     print()
 
     
-    # llist.reverse()
+    llist.reverse()
 
-    # print("After reverse")
+    print("After reverse")
 
-    # llist.printList()
+    llist.printList()
 
-    # llist.atStart(7)
-    # llist.atEnd(9)
-    # llist.atEnd(10)
-    # llist.atStart(6)
-
-    # llist.atNode(2,18)
-
+    llist.atStart(7)
+    llist.atEnd(9)
+    llist.atEnd(10)
+    llist.atStart(6)
+    print()
+    llist.atNode(llist.head.next,18)
+    llist.printList()
